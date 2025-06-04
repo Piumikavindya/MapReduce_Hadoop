@@ -1,0 +1,13 @@
+*Start hadoop
+
+start-all.sh  (to Start NameNode daemon and DataNode daemon) 
+localhost:9870 
+
+hadoop fs -mkdir /user 
+hadoop fs -mkdir /user/bitcoin
+touch demo.csv
+hadoop fs -put demo.csv /user/bicoin  (put the csv file into bitcoin folder)
+
+*Stop all running nodes
+
+stop-all.sh
